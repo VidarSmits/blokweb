@@ -40,7 +40,7 @@ Homepagina
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
-hier de naam van de pagina  
+Ontdek Centraal Museum
 <img src="images/ontdek-img1.jpg" width="375px" alt="ontdek-bovenkant">
 <img src="images/ontdek-img2.jpg" width="375px" alt="ontdek-midden-1">
 <img src="images/ontdek-img3.jpg" width="375px" alt="ontdek-midden-2">
