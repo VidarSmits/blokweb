@@ -39,6 +39,8 @@ _Homepage_
 <img src="images/home-img3.jpg" width="375px" alt="home-midden-2">
 <img src="images/home-img4.jpg" width="375px" alt="home-onder">
 
+---
+
 #### Screenshot(s) van de tweede pagina (small screen):
 
 _Ontdek Centraal Museum_
