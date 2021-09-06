@@ -13,7 +13,7 @@ Vidar Smits
 
 #### Je startniveau:
 
-Rood
+- Rood
 
 #### Je focus:
 
