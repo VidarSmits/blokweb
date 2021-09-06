@@ -17,7 +17,7 @@ Vidar Smits
 
 #### Je focus:
 
-Responsive maken
+- Responsive maken
 
 </details>
 
