@@ -32,7 +32,8 @@ https://www.centraalmuseum.nl/nl
 
 #### Screenshot(s) van de eerste pagina (small screen):
 
-Homepagina
+_Homepage_
+
 <img src="images/home-img1.jpg" width="375px" alt="home-bovenkant">
 <img src="images/home-img2.jpg" width="375px" alt="home-midden-1">
 <img src="images/home-img3.jpg" width="375px" alt="home-midden-2">
@@ -40,7 +41,8 @@ Homepagina
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
-Ontdek Centraal Museum
+_Ontdek Centraal Museum_
+
 <img src="images/ontdek-img1.jpg" width="375px" alt="ontdek-bovenkant">
 <img src="images/ontdek-img2.jpg" width="375px" alt="ontdek-midden-1">
 <img src="images/ontdek-img3.jpg" width="375px" alt="ontdek-midden-2">
