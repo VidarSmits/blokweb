@@ -59,11 +59,12 @@ _Ontdek Centraal Museum_
 
 ### de hele pagina:
 
-<img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de eerste pagina">
+<img src="images/breakdownschets_1.jpg" width="375px" alt="breakdown van de tweede pagina">
 
-### dynamisch deel (bijv menu):
+### dynamisch deel (menu):
 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="images/breakdownschets_menu.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
