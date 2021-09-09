@@ -60,7 +60,6 @@ _Ontdek Centraal Museum_
 ### de hele pagina:
 
 <img src="images/breakdownschets.jpg" width="375px" alt="breakdown van de eerste pagina">
-<img src="images/breakdownschets_1.jpg" width="375px" alt="breakdown van de tweede pagina">
 
 ### dynamisch deel (menu):
 
