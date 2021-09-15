@@ -80,11 +80,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 samen met je groepje opstellen
 
-| Vidar                                                         | Claudio                   | Leroy        | Ruben            |
-| ------------------------------------------------------------- | ------------------------- | ------------ | ---------------- |
-| CSS zo netjes?                                                | Divjes en classes teveel? | en ik dit    | en dan ik dat    |
-| Moet je alles wat mogelijk is in custom properties?           | dit als er tijd is        | nog een punt | dit wil ik zeker |
-| Classes zo op de juiste manier met sections? (nog bespreken?) | ...                       | ...          | ...              |
+| Vidar                                                         | Claudio                   | Leroy | Ruben |
+| ------------------------------------------------------------- | ------------------------- | ----- | ----- |
+| CSS zo netjes?                                                | Divjes en classes teveel? | ...   | ...   |
+| Moet je alles wat mogelijk is in custom properties?           |                           | ...   | ...   |
+| Classes zo op de juiste manier met sections? (nog bespreken?) | ...                       | ...   | ...   |
 
 ### Verslag van meeting
 
