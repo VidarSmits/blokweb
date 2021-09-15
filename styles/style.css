@@ -1,5 +1,544 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
+body,
+p,
+a,
+ul,
+li {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Algemene properties */
+
+:root {
+  --textColor: #282931;
+  --borderColor: #282931;
+
+  --fontNameBold: FranklinGothic-Bold;
+  --fontNameBook: FranklinGothic-Book;
+  --fontNameMedium: FranklinGothic-Medium;
+
+  --backgroundCollectieColor: #e1ecf4;
+  --backgroundHeader: #faf8ef;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "var(--fontNameBook)";
+  src: url("../fonts/ITCFranklinGothicStd-Book.woff2") format("woff2"),
+    url("../fonts/ITCFranklinGothicStd-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "var(--fontNameBold)";
+  src: url("../fonts/ITCFranklinGothicStd-DmCp.woff2") format("woff2"),
+    url("../fonts/ITCFranklinGothicStd-DmCp.woff") format("woff");
+}
+
+@font-face {
+  font-family: "var(--fontNameMedium)";
+  src: url("../fonts/ITCFranklinGothicStd-Med.woff2") format("woff2"),
+    url("../fonts/ITCFranklinGothicStd-Med.woff") format("woff");
+}
+
+/* ***************** */
+
+/* Basis */
+
+h1 {
+  font-family: "var(--fontNameBold)";
+  color: var(--textColor);
+  margin: 0;
+}
+
+h2 {
+  font-family: "var(--fontNameBold)";
+  color: var(--textColor);
+  margin: 0;
+  font-size: 2em;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-family: "var(--fontNameBold)";
+  color: var(--textColor);
+  margin: 0;
+  font-size: 2.8125em;
+}
+
+a {
+  font-family: "var(--fontNameMedium)";
+  text-align: center;
+}
+
+#knopwit {
+  border: 0.0625rem solid #fff;
+  font-size: 1.0625em;
+  width: 135px;
+  height: 55px;
+  padding: 17px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.knop {
+  font-size: 1.0625rem;
+  width: 135px;
+  height: 55px;
+  border: 0.0625rem solid var(--borderColor);
+  padding: 14px;
+  color: var(--textColor);
+  letter-spacing: 0.05em;
+}
+
+input {
+  border: 1px solid #c3c3c3;
+  padding: 16px;
+  font-family: "var(--fontNameBook), sans-serif;";
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  height: auto;
+}
+
+#abonneren {
+  border: 1px solid #282931;
+  color: var(--textColor);
+  background-color: #fff;
+  font-size: 1.0625em;
+  font-family: "var(--fontNameMedium)";
+}
+
+/* ***************** */
+
+/* Mobiel */
+
+/* ***************** */
+
+/* Header */
+
+.leestekst {
+  text-transform: none;
+  letter-spacing: 0em;
+  line-height: 1.875em;
+  margin-top: 0px;
+  margin-bottom: 0.625em;
+  font-family: "var(--fontNameBook)";
+  font-size: 1.125em;
+  color: var(--textColor);
+}
+
+header section {
+  max-width: 100%;
+}
+
+header img:nth-of-type(1) {
+  width: 189px;
+  height: auto;
+  margin-left: -84px;
+  position: relative;
+  top: 60px;
+}
+
+.headertop {
+  background-image: url(../images/CentraalMuseum.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 13em;
+  margin: 0 auto;
+}
+
+.headerbottom {
+  background-color: var(--backgroundHeader);
+  width: 100%;
+}
+
+nav:last-of-type {
+  padding: 60px;
+}
+
+.headerbottom a {
+  --textColor: #494a51;
+
+  color: var(--textColor);
+  font-size: 1.2em;
+  border-bottom: 1px solid #494a51;
+  font-family: "var(--fontNameBook)";
+}
+
+.headerbottom ul li {
+  margin-bottom: 18px;
+}
+
+.headerbottom ul li::before {
+  --textColor: #494a51;
+
+  content: "\f105";
+  font-size: 1rem;
+  position: relative;
+  color: var(--textColor);
+  right: 10px;
+  font-family: "FontAwesome";
+}
+
+/* main */
+
+/* ***************** */
+
+main section {
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+main section img {
+  max-width: 100%;
+  align-self: center;
+  margin-bottom: 0.01em;
+}
+
+main section p {
+  font-family: "var(--fontNameMedium)";
+  font-size: 0.9375em;
+  letter-spacing: 0.05em;
+  color: var(--textColor);
+  margin-top: 1.125em;
+  text-transform: uppercase;
+}
+
+.collectie {
+  gap: 0.625rem;
+  display: grid;
+  grid-gap: 2em;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+.collectie section:first-of-type {
+  gap: 0.625rem;
+}
+
+.collectie section:last-of-type {
+  background-color: var(--backgroundCollectieColor);
+  gap: 0.625rem;
+}
+
+.collectieonline {
+  --backgroundColor: #fbf9f2;
+
+  background-color: var(--backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9375rem;
+}
+
+.collectieonline h3 {
+  text-align: center;
+}
+
+.collectieonline p {
+  letter-spacing: 0.03em;
+  font-size: 1em;
+  padding-top: 3.5625em;
+  padding-bottom: 0.825em;
+}
+
+.slider {
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slides > img {
+  flex-shrink: 0;
+  width: 300px;
+  margin-right: 50px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+.aanbevolen {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.aanbevolen h3 {
+  text-align: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.6em;
+}
+
+.info {
+  width: 100%;
+  height: 333px;
+  background-color: var(--backgroundCollectieColor);
+}
+
+.info h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.info a {
+  text-align: left;
+  font-size: 1em;
+  margin-top: 0.75rem;
+  font-family: "var(--fontNameBook)";
+  color: #494a51;
+  text-decoration: underline;
+}
+
+.nieuwsenblogs {
+  text-align: left;
+}
+
+.nieuwsenblogs article {
+  margin-bottom: 4.6875rem;
+}
+
+.nieuwsenblogs article h3 {
+  font-size: 2.8125em;
+  text-align: center;
+  margin-top: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+.nieuwsenblogs article a {
+  margin-top: 10px;
+  font-family: "var(--fontNameBold)";
+  color: var(--textColor);
+  font-size: 2em;
+  text-align: left;
+  line-height: 2.5rem;
+}
+
+.nieuwsenblogs article img {
+  margin-bottom: 0.5em;
+}
+
+.nieuwsenblogs article p:first-of-type {
+  color: #a1a1a3;
+  margin-bottom: 0.8em;
+}
+
+.nieuwsenblogs article p:last-of-type {
+  margin-top: 0.625rem;
+}
+
+.nieuwsenblogs a img:last-of-type {
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  width: 3.125em;
+  height: 3.125em;
+  border: 0;
+}
+
+.nieuwsenblogs section:last-of-type {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  padding: 0;
+  position: relative;
+  top: -4em;
+  gap: 1em;
+}
+
+.nieuwsenblogs section a {
+  --textColora: rgba(0, 0, 0, 0, 84);
+  align-self: center;
+  font-family: "var(--fontNameBook)";
+  color: var(--textColora);
+}
+
+.meer {
+  align-items: center;
+  padding: 0;
+  position: relative;
+  max-width: 100%;
+  top: -2em;
+}
+
+.meer a {
+  width: 170px;
+  margin-bottom: 50px;
+}
+
+.meer section:nth-child(2) {
+  justify-content: center;
+}
+
+.meer ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.meer li {
+  width: 50px;
+  height: 50px;
+  padding: 11px 14px;
+  border-radius: 50%;
+  border: 1px solid #282931;
+  margin: 5px;
+}
+
+.meer li img {
+  width: 20px;
+  height: 27px;
+}
+
+/* Footer */
+
+/* ***************** */
+
+footer {
+  --BackgroundColorFooter: #fbf9f2;
+
+  background-color: var(--BackgroundColorFooter);
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer section:nth-child(1) img {
+  max-width: 100%;
+  vertical-align: middle;
+  margin-bottom: 1.25rem;
+}
+
+footer p {
+  font-family: "var(--fontNameMedium)";
+  font-size: 0.9375em;
+  letter-spacing: 0.05em;
+  color: var(--textColor);
+  margin-top: 28px;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+
+footer p:nth-child(2) {
+  margin-top: 0.9375rem;
+}
+
+footer section:nth-child(1) li,
+a {
+  --textColorfooter: #494a51;
+
+  color: var(--textColorfooter);
+  font-size: 1.125em;
+  font-family: "var(--fontNameBook)";
+  line-height: 1.75rem;
+}
+
+footer section:nth-child(1) li:last-of-type {
+  margin-bottom: 0.9375rem;
+}
+
+footer section:nth-child(1) a {
+  color: #494a51;
+  border-bottom: 1px solid #494a51;
+}
+
+footer section:nth-of-type(2) {
+  padding-top: 0.5em;
+  padding-bottom: 2.125rem;
+}
+
+footer section:nth-of-type(2) ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3125rem;
+}
+
+footer section:nth-of-type(2) ul li img {
+  width: 24px;
+  height: 24px;
+}
+
+footer section:nth-of-type(3) {
+  display: flex;
+}
+
+footer section:nth-of-type(3) ul {
+  padding-right: 30px;
+}
+
+footer section:nth-of-type(3) ul li img {
+  max-width: 120px;
+  flex-direction: row-reverse;
+}
+
+/* ***************** */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  nav:last-of-type ul {
+    display: flex;
+  }
+
+  nav:last-of-type ul li {
+    display: inline-block;
+    margin-right: 40px;
+  }
+
+  .collectie {
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .collectie section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ***************** */
+
+/* Grote tablets en laptops */
+@media screen and (min-width: 60em) {
+}
+
+/* ***************** */
+
+/* Desktop */
+
+@media screen and (min-width: 75em) {
+}
