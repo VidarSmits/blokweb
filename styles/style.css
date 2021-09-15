@@ -24,6 +24,8 @@ li {
   list-style-type: none;
 }
 
+/* ***************** */
+
 /* Algemene properties */
 
 :root {
@@ -37,6 +39,8 @@ li {
   --backgroundCollectieColor: #e1ecf4;
   --backgroundHeader: #faf8ef;
 }
+
+/* ***************** */
 
 /* Fonts */
 
