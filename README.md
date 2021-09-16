@@ -90,10 +90,10 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ordening van html beter stuctureren voor Screen Reader (bijv.)
+- Media Queries voor componenten in plaats van onderaan de CSS
+- Alle Custom Properties kleuren moeten er in staan
+- Div van slider weghalen en UL voor in de plaats
 
 </details>
 
