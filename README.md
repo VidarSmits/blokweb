@@ -108,17 +108,17 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
   <img src="images/css-custom.png" width="375px" alt="breakdown van dynamisch deel">
 
 - De menu navigatie is nu gelukt na de les van dinsdag
-  <img src="images/hambugrer.png" width="375px" alt="breakdown van dynamisch deel">
+  <img src="images/hamburger.png" width="375px" alt="breakdown van dynamisch deel">
 
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| Vidar                                                                                     | Claudio            | student 3    | Ruben |
+| Vidar                                                                                     | Claudio            | Leroy        | Ruben |
 | ----------------------------------------------------------------------------------------- | ------------------ | ------------ | ----- |
 | Hoe animeer je het hamburger menu (voorbeeld zal ik laten zien)                           | en dit             | en ik dit    | ...   |
 | Moet je ook custom properties met bijvoorbeeld white-space of is dat meer als aanbevolen? | dit als er tijd is | nog een punt | ...   |
-| Moet alles excact hetzelfde zijn als de website?                                          | ...                | ...          | ...   |
+| Moet alles exact hetzelfde zijn als de website?                                           | ...                | ...          | ...   |
 
 ### Verslag van meeting
 
