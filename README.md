@@ -112,8 +112,6 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Agenda voor meeting
 
-samen met je groepje opstellen
-
 | Vidar                                                                                     | Claudio            | Leroy        | Ruben |
 | ----------------------------------------------------------------------------------------- | ------------------ | ------------ | ----- |
 | Hoe animeer je het hamburger menu (voorbeeld zal ik laten zien)                           | en dit             | en ik dit    | ...   |
