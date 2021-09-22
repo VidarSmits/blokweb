@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>
+      Nucleo SVG Sprite
+     </title>
+    </head>
+    <body class="" style="background-color: #ffffff">
+     <ul>
+      <li>
+       <div class="svg-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="32" width="32">
+         <g class="nc-icon-wrapper" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" fill="#494a51" stroke="#494a51" stroke-miterlimit="10">
+          <g class="nc-interact_menu-arrow-o-32" transform="rotate(180 16 16)">
+           <path data-cap="none" fill="none" stroke="#494a51" stroke-linecap="round" stroke-linejoin="round" d="M4 7h24" stroke-dasharray="24 24" stroke-dashoffset="-12" transform="translate(0 9) rotate(45 28 7)">
+           </path>
+           <path data-cap="none" fill="none" stroke="#494a51" stroke-linecap="round" stroke-linejoin="round" d="M4 16h24">
+           </path>
+           <path data-cap="none" fill="none" stroke="#494a51" stroke-linecap="round" stroke-linejoin="round" d="M4 25h24" stroke-dasharray="24 24" stroke-dashoffset="-12" transform="translate(0 -9) rotate(-45 28 25)">
+           </path>
+          </g>
+          <script>
+           !function(){function t(e){var i=e.parentNode;if("svg"!==i.tagName)i=t(i);return i;}function e(t,e,i,n){return 1&gt;(t/=n/2)?i/2*t*t*t*t+e:-i/2*((t-=2)*t*t*t-2)+e}function i(t){this.element=t,this.container=this.element.querySelectorAll(".nc-interact_menu-arrow-o-32")[0],this.topLine=this.element.getElementsByTagName("path")[0],this.bottomLine=this.element.getElementsByTagName("path")[2],this.time={start:null,total:300},this.status={interacted:!1,animating:!1},this.init()}if(!window.requestAnimationFrame){var n=null;window.requestAnimationFrame=function(t,e){var i=(new Date).getTime();n||(n=i);var a=Math.max(0,16-(i-n)),s=window.setTimeout(function(){t(i+a)},a);return n=i+a,s}}i.prototype.init=function(){var t=this;this.element.addEventListener("click",function(){t.status.animating||(t.status.animating=!0,window.requestAnimationFrame(t.triggerAnimation.bind(t)))})},i.prototype.triggerAnimation=function(t){var e=this.getProgress(t),i=this.status.interacted?this.time.total-e:e;this.animateIcon(i),this.checkProgress(e)},i.prototype.getProgress=function(t){return this.time.start||(this.time.start=t),t-this.time.start},i.prototype.checkProgress=function(t){var e=this;this.time.total&gt;t?window.requestAnimationFrame(e.triggerAnimation.bind(e)):(this.status={interacted:!this.status.interacted,animating:!1},this.time.start=null)},i.prototype.animateIcon=function(t){if(t&gt;this.time.total)(t=this.time.total);if(0&gt;t)(t=0);var i=e(t,0,1,this.time.total).toFixed(2);this.container.setAttribute("transform","rotate("+180*i+" 16 16)"),this.topLine.setAttribute("transform","translate(0 "+9*i+") rotate("+45*i+" 28 7)"),this.bottomLine.setAttribute("transform","translate(0 "+9*-i+") rotate("+45*-i+" 28 25)"),this.topLine.setAttribute("stroke-dashoffset",12*-i),this.bottomLine.setAttribute("stroke-dashoffset",12*-i)};var a=document.getElementsByClassName("nc-interact_menu-arrow-o-32");if(a)for(var s=0;a.length&gt;s;s++)new i(t(a[s]))}();
+          </script>
+         </g>
+        </svg>
+       </div>
+       <p>
+        .icon.icon-menu-to-arrow-left
+       </p>
+      </li>
+     </ul>
+     <style>
+      *, *::after, *::before { box-sizing: border-box;}body {font-family: system-ui, sans-serif; font-size: 0.75rem; margin: 0; padding: 0;}svg {max-width: 64px; max-height: 64px; display: block;}ul {list-style: none; display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 1rem; margin: 0;}ul li {position: relative; display:flex; justify-content: center; align-items: center; width: 120px; height: 120px; padding: 0 0 16px; text-align: center; border-radius: .4em; cursor: pointer; transition: background 0.2s;}ul li:hover {background: rgba(0,0,0,0.05);} .dark-background ul li:hover {background: rgba(255,255,255,0.08)}ul p {color: rgba(0,0,0,0.6); margin: 0; -webkit-user-select: auto; -moz-user-select: auto; -ms-user-select: auto; user-select: auto; position: absolute; width: 100%; left: 0; bottom: 1rem; white-space: nowrap; padding: 0 1rem; overflow: hidden; text-overflow: ellipsis;}.dark-background ul p {color: rgba(255,255,255,0.9)}ul p::selection {background: rgba(0,0,0,0.9); color: #fff;}.dark-background ul p::selection {background: rgba(255,255,255,0.9); color: rgba(0,0,0,0.9);}
+     </style>
+     <script>
+      function SelectText(element) { var doc = document , text = element , range, selection; if (doc.body.createTextRange) { range = document.body.createTextRange(); range.moveToElementText(text); range.select(); } else if (window.getSelection) { selection = window.getSelection(); range = document.createRange(); range.selectNodeContents(text); selection.removeAllRanges(); selection.addRange(range); }} window.onload = function() { var listItems = document.getElementsByTagName("li"); for (var i = 0; i
+     < listItems.length; i++) { listItems[i].onclick = function fun() { var item = this.getElementsByTagName("p"); SelectText(item[0]); }} }</script>
+    </body>
+   </html>

@@ -5,12 +5,10 @@
     <meta name="author" content="Vidar Smits" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>
-      Welkom in het Centraal Museum - Centraal Museum Utrecht - FED2021
-    </title>
+    <title>Centraal Museum – Hét kunstmuseum van Utrecht - FED2021</title>
 
     <link href="styles/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.ico" />
     <script src="https://use.fontawesome.com/579ead5dc1.js"></script>
   </head>
 
@@ -18,35 +16,50 @@
     <!-- Header -->
     <header>
       <section class="headertop">
-        <img src="images/centraal_museum_logo.svg" alt="centraal_museum_logo" />
-        <nav>
+        <!-- <a id="knopwit" href="#">Ontdek het museum</a> -->
+        <button href="#nav"></button>
+        <nav id="nav"> 
+<section>
+  <img
+  id="logo"
+  src="images/centraal_museum_logo.svg"
+  alt="centraal_museum_logo"
+/>
+
+            <ul>
+            <li><a href="#">Plan uw bezoek</a></li>
+            <li><a href="#">Zien en doen</a></li>
+            <li><a href="#">Praktische informatie</a></li>
+            <li><a href="#">Onderwijs, groepen &amp; families</a></li>
+            <li><a href="#">Zaalverhuur</a></li>
+          </ul>
+          
           <ul>
-            <section>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </section>
-            <section>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </section>
-            <section>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </section>
+            <li><a href="#">Ontdek het museum</a></li>
+            <li><a href="#">Ontmoet de iconen</a></li>
+            <li><a href="#">Bekijk de collectie online</a></li>
+            <li><a href="#">Tentoonstellingsarchief</a></li>
+            <li><a href="#">Programmalijnen</a></li>
+            <li><a href="#">Over de collectie</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="#">Over het museum</a></li>
+            <li><a href="#">Steun het museum</a></li>
+            <li><a href="#">Organisatie</a></li>
+            <li><a href="#">Vacatures</a></li>
+            <li><a href="#">Nieuws &amp; pers</a></li>
+            <li><a href="#">Klantenservice &amp contact</a></li>
           </ul>
         </nav>
       </section>
-      
+
       <section class="headerbottom">
+        <img
+          id="logo"
+          src="images/centraal_museum_logo.svg"
+          alt="centraal_museum_logo"
+        />
         <nav>
           <ul>
             <li><a href="#">Tickets</a></li>
@@ -59,46 +72,54 @@
     <!-- Main -->
     <main>
       <section class="collectie">
-        <section>
-          <img src="images/large5.jpeg" alt="botanische" />
-          <p>11 sep 2021 - 09 jan 2022</p>
+      
+       
+      <section>
+        <img src="images/large5.jpeg" alt="botanische" />
+        <article>
           <h2>De botanische revolutie</h2>
+          <p>11 sep 2021 - 09 jan 2022</p>
           <p class="leestekst">Over de noodzaak van kunst en tuinieren.</p>
           <a class="knop" href="#">Meer info</a>
+        </article>
         </section>
 
-        <section>
-          <img src="images/large.jpeg" alt="joost-van-bleiswijk" />
-          <p>03 jul 2021 - 20 okt 2021</p>
+      <section>
+        <img src="images/large.jpeg" alt="joost-van-bleiswijk" />
+      <article>
           <h2>Joost van Bleiswijk: Reconnect</h2>
+          <p>03 jul 2021 - 20 okt 2021</p>
           <a class="knop" href="#">Meer info</a>
+      </article>
         </section>
-      </section>
+</section>
 
       <section class="collectieonline">
+        <h3>Blader door de collectie</h3>
         <p>Collectie Online</p>
-        <h3>Blader door de collectie</h2>
-        <div class="slider">
-          <div class="slides">
-            <img src="images/large3.jpeg" alt="rietveld" />
-            <img src="images/large4.jpeg" alt="de-koppelaarster" />
-            <img src="images/large5.jpeg" alt="botanische" />
-            <img src="images/large6.jpeg" alt="schip" />
-            <img src="images/large2.jpeg" alt="nijntje" />
-          </div>
-        </div>
+        <section>
+          <ul class="slides">
+            <li><img src="images/large3.jpeg" alt="rietveld" /></li>
+            <li><img src="images/large4.jpeg" alt="de-koppelaarster" /></li>
+            <li><img src="images/large5.jpeg" alt="botanische" /></li>
+            <li><img src="images/large6.jpeg" alt="schip" /></li>
+            <li><img src="images/large2.jpeg" alt="nijntje" /></li>
+          </ul>
+        </section>
       </section>
 
       <section class="aanbevolen">
-        <h3>Aanbevolen</h3>
-        <img src="images/centralproost.jpeg" alt="centralproost" />
-        <p>10 sep 2021 - 24 sep 2021</p>
+        
         <h2>Central Proost</h2>
+        <h3>Aanbevolen</h3>
+        <p>10 sep 2021 - 24 sep 2021</p>
         <p class="leestekst">
           Vrijdagmiddagborrels met muziek in de museumtuin &#40;gratis&#41;
         </p>
+        <img src="images/centralproost.jpeg" alt="centralproost" />
         <a class="knop" href="#">Meer info</a>
       </section>
+
       <section class="info">
         <h2>Info over tentoonstellingen in uw mail?</h2>
         <input required id="mail" type="text" placeholder="Uw mailadres" />
@@ -107,8 +128,8 @@
       </section>
 
       <section class="nieuwsenblogs">
+        <h3>Nieuws &amp; blogs</h3>
         <article>
-          <h3>Nieuws &amp; blogs</h3>
           <img src="images/mini.jpeg" alt="mini" />
           <p>03 sep 2021</p>
           <a href="#">Jeroen Kooijmans schenkt film aan Centraal Museum</a>
@@ -134,13 +155,11 @@
             Patricia Kaersenhout brengt een ode aan de onzichtbare vrouwen
             achter Merian.
           </p>
-        </article>
-        <section>
           <a href="#"
-            ><img src="images/evaburgering.jpeg" alt="evaburgering"
-          /></a>
-          <a href="#">Eva Burgering</a>
-        </section>
+            ><img src="images/evaburgering.jpeg" alt="evaburgering" />Eva
+            burgering</a
+          >
+        </article>
       </section>
 
       <section class="meer">
@@ -202,7 +221,9 @@
             /></a>
           </li>
           <li>
-            <a href="#"><img src="images/facebook-social.svg" alt="facebook-social" /></a>
+            <a href="#"
+              ><img src="images/facebook-social.svg" alt="facebook-social"
+            /></a>
           </li>
           <li>
             <a href="#"

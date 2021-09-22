@@ -104,17 +104,21 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+- De CSS Custom properties met vooral de kleuren zijn nu allemaal netjes neergezet
+  <img src="images/css-custom.png" width="375px" alt="breakdown van dynamisch deel">
+
+- De menu navigatie is nu gelukt na de les van dinsdag
+  <img src="images/hambugrer.png" width="375px" alt="breakdown van dynamisch deel">
 
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Vidar                                                                                     | Claudio            | student 3    | Ruben |
+| ----------------------------------------------------------------------------------------- | ------------------ | ------------ | ----- |
+| Hoe animeer je het hamburger menu (voorbeeld zal ik laten zien)                           | en dit             | en ik dit    | ...   |
+| Moet je ook custom properties met bijvoorbeeld white-space of is dat meer als aanbevolen? | dit als er tijd is | nog een punt | ...   |
+| Moet alles excact hetzelfde zijn als de website?                                          | ...                | ...          | ...   |
 
 ### Verslag van meeting
 
