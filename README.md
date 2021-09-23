@@ -112,11 +112,11 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Agenda voor meeting
 
-| Vidar                                                                                     | Claudio            | Leroy        | Ruben |
-| ----------------------------------------------------------------------------------------- | ------------------ | ------------ | ----- |
-| Hoe animeer je het hamburger menu (voorbeeld zal ik laten zien)                           | en dit             | en ik dit    | ...   |
-| Moet je ook custom properties met bijvoorbeeld white-space of is dat meer als aanbevolen? | dit als er tijd is | nog een punt | ...   |
-| Moet alles exact hetzelfde zijn als de website?                                           | ...                | ...          | ...   |
+| Vidar                                                                                     | Claudio                                                                                             | Leroy | Ruben |
+| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ----- | ----- |
+| Hoe animeer je het hamburger menu (voorbeeld zal ik laten zien)                           | Is het de bedoeling dat je de filters op de pagina ook werkend maakt? (Voorbeeld zal ik laten zien) | ...   | ...   |
+| Moet je ook custom properties met bijvoorbeeld white-space of is dat meer als aanbevolen? | Hoe pas je de IntersectionObserver op de correcte manier toe in javascript                          | ...   | ...   |
+| Moet alles exact hetzelfde zijn als de website?                                           | ...                                                                                                 | ...   | ...   |
 
 ### Verslag van meeting
 
