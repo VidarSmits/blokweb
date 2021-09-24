@@ -16,16 +16,24 @@
     <!-- Header -->
     <header>
       <section class="headertop">
-        <!-- <a id="knopwit" href="#">Ontdek het museum</a> -->
-        <button href="#nav"></button>
+       <a id="knopwit" href="#">Ontdek het museum</a> 
+        <button aria-label="menu" href="#nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <nav id="nav"> 
-<section>
-  <img
-  id="logo"
-  src="images/centraal_museum_logo.svg"
-  alt="centraal_museum_logo"
-/>
+  <section>
+<img src="images/logo-footer.svg" alt="">
+</section>
 
+<section>
+  <input type="text" placeholder="Website doorzoeken">
+  <a href="#">English | Deutsch</a>
+  </section>
+  
+
+<section>
             <ul>
             <li><a href="#">Plan uw bezoek</a></li>
             <li><a href="#">Zien en doen</a></li>
@@ -51,6 +59,7 @@
             <li><a href="#">Nieuws &amp; pers</a></li>
             <li><a href="#">Klantenservice &amp contact</a></li>
           </ul>
+          </section>
         </nav>
       </section>
 
@@ -72,13 +81,11 @@
     <!-- Main -->
     <main>
       <section class="collectie">
-      
-       
       <section>
         <img src="images/large5.jpeg" alt="botanische" />
         <article>
           <h2>De botanische revolutie</h2>
-          <p>11 sep 2021 - 09 jan 2022</p>
+          <time>11 sep 2021 - 09 jan 2022</time>
           <p class="leestekst">Over de noodzaak van kunst en tuinieren.</p>
           <a class="knop" href="#">Meer info</a>
         </article>
@@ -88,14 +95,14 @@
         <img src="images/large.jpeg" alt="joost-van-bleiswijk" />
       <article>
           <h2>Joost van Bleiswijk: Reconnect</h2>
-          <p>03 jul 2021 - 20 okt 2021</p>
+          <time>03 jul 2021 - 20 okt 2021</time>
           <a class="knop" href="#">Meer info</a>
       </article>
         </section>
 </section>
 
       <section class="collectieonline">
-        <h3>Blader door de collectie</h3>
+        <h2>Blader door de collectie</h2>
         <p>Collectie Online</p>
         <section>
           <ul class="slides">
@@ -109,10 +116,9 @@
       </section>
 
       <section class="aanbevolen">
-        
-        <h2>Central Proost</h2>
-        <h3>Aanbevolen</h3>
-        <p>10 sep 2021 - 24 sep 2021</p>
+        <h2>Aanbevolen</h2>
+        <h3>Central Proost</h3>
+        <time>10 sep 2021 - 24 sep 2021</time>
         <p class="leestekst">
           Vrijdagmiddagborrels met muziek in de museumtuin &#40;gratis&#41;
         </p>
@@ -128,29 +134,30 @@
       </section>
 
       <section class="nieuwsenblogs">
-        <h3>Nieuws &amp; blogs</h3>
+        <h2>Nieuws &amp; blogs</h2>
         <article>
+        </h3><a href="#">Jeroen Kooijmans schenkt film aan Centraal Museum</a></h3> 
           <img src="images/mini.jpeg" alt="mini" />
-          <p>03 sep 2021</p>
-          <a href="#">Jeroen Kooijmans schenkt film aan Centraal Museum</a>
+          <time>03 sep 2021</time>
           <p class="leestekst">
             New York is Eating Me & The Cactus Dance is 11 september 2021 te
             zien in het HEM.
           </p>
         </article>
         <article>
+        </h3><a href="#">Nieuwe aankoop van Patricia Kaersenhout</a></h3> 
           <img src="images/patricia.jpeg" alt="patricia" />
-          <p>26 aug 2021</p>
-          <a href="#">Nieuwe aankoop van Patricia Kaersenhout</a>
+          <time>26 aug 2021</time>
           <p class="leestekst">
             Samen met drie andere musea is 'Guess Who's Coming To Dinner Too?'
             aangekocht.
           </p>
         </article>
         <article>
+        </h3><a href="#">Uit de schaduw van Maria Sibylla Merian
+        </a></h3> 
           <img src="images/maria.jpeg" alt="maria" />
-          <p>23 aug 2021</p>
-          <a href="#">Uit de schaduw van Maria Sibylla Merian</a>
+          <time>23 aug 2021</time>
           <p class="leestekst">
             Patricia Kaersenhout brengt een ode aan de onzichtbare vrouwen
             achter Merian.
@@ -188,32 +195,32 @@
 
     <!-- Footer -->
     <footer>
+      <img id="logofooter" src="images/logo-footer.svg" alt="logo-footer" />
       <section>
-        <img src="images/logo-footer.svg" alt="logo-footer" />
-        <p>Contact</p>
         <ul>
+          <p>Contact</p>
           <li>Agnietenstraat 1</li>
           <li>3512 XA Utrecht</li>
           <li>
-            <a data-linktype="email" href="mailto:info@centraalmuseum.nl"
+            <a href="mailto:info@centraalmuseum.nl"
               >info@centraalmuseum.nl</a
             >
           </li>
         </ul>
-        <p>Openingstijden</p>
+      </section>
+      <section>
         <ul>
-          <li>Dinsdag t/m zondag 11.00 - 17.00 uur</li>
+          <p>Openingstijden</p>
+          <time><li>Dinsdag t/m zondag 11.00 - 17.00 uur</li></time>
           <li>
             <a
               href="https://www.centraalmuseum.nl/nl/plan-uw-bezoek"
-              data-linktype="internal"
               >Plan uw bezoek</a
             >
           </li>
         </ul>
-      </section>
-
-      <section>
+      </section> 
+      <section> 
         <ul>
           <li>
             <a href="#"
@@ -252,8 +259,6 @@
                 alt="Logo_ministerie_OCW"
             /></a>
           </li>
-        </ul>
-        <ul>
           <li>
             <a href="#">
               <img src="images/Gemeente-Utrecht.svg" alt="Gemeente-Utrecht"

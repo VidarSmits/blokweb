@@ -26,7 +26,7 @@ li {
 
 /* ***************** */
 
-/* Algemene properties */
+/* #Algemene properties */
 
 :root {
   /* BackgroundColors */
@@ -41,6 +41,7 @@ li {
   --textColorOverig: #494a51;
   --textColorDatumNieuws: #a1a1a3;
   --textColorAuteur: rgba(0, 0, 0, 0, 84);
+  --textColorZoeken: #404040;
 
   /* BorderColors */
   --borderColorHeaderBottom: #494a51;
@@ -55,7 +56,7 @@ li {
 
 /* ***************** */
 
-/* Fonts */
+/* #Fonts */
 
 @font-face {
   font-family: "var(--fontNameBook)";
@@ -77,7 +78,9 @@ li {
 
 /* ***************** */
 
+/**************/
 /* Basis */
+/**************/
 
 h1 {
   font-family: "var(--fontNameBold)";
@@ -93,6 +96,11 @@ h2 {
   line-height: 2.5rem;
 }
 
+h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 h3 {
   font-family: "var(--fontNameBold)";
   color: var(--textColor);
@@ -103,6 +111,10 @@ h3 {
 a {
   font-family: "var(--fontNameMedium)";
   text-align: center;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 article {
@@ -120,78 +132,118 @@ article {
   letter-spacing: 0.05em;
 }
 
-input {
-  border: 1px solid var(--borderInput);
-  padding: 16px;
-  font-family: "var(--fontNameBook), sans-serif;";
-  font-size: 1em;
+.knop:hover,
+#knopwit:hover {
+  background: var(--backgroundNavSpan);
+  color: #ffffff;
+  border: none;
+}
+
+#knopwit {
+  font-size: 1.2em;
+  width: auto;
+  height: 55px;
+  border: 0.0625rem solid var(--backgroundInfo);
+  padding: 17px;
+  color: var(--backgroundInfo);
   letter-spacing: 0.05em;
-  height: auto;
-  width: 100%;
-}
-
-#abonneren {
-  border: 1px solid var(--borderColorInfo);
-  color: var(--textColor);
-  background-color: var(--backgroundInfo);
-  font-size: 1.0625em;
-  font-family: "var(--fontNameMedium)";
+  text-transform: uppercase;
+  align-self: flex-end;
+  margin: 2.125em auto;
 }
 
 /* ***************** */
 
-/* Mobiel */
-
-/* ***************** */
-
-/* Header */
+/***********/
+/* #Header */
+/***********/
 
 header {
   position: relative;
   display: grid;
 }
 
-/* .headertop a:first-of-type {
-  position: fixed;
-  right: 25px;
-  top: 25px;
-  height: 3.125rem;
-  width: 3.125rem;
-  background-color: var(--backgroundNav);
-  border-radius: 50%;
-}  */
+.headerbottom img {
+  width: 11em;
+  height: auto;
+  position: absolute;
+  top: -20em;
+  left: 0;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    grid-template-columns: 23em 1fr;
+  }
+}
+
+@media (max-width: 30em) {
+  .headerbottom img {
+    margin-left: -84px;
+    width: 11em;
+  }
+}
+
+@media (min-width: 30em) and (max-width: 61.9375em) {
+  .headerbottom img {
+    margin-left: -117px;
+    width: 253px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    height: 20em;
+    margin-bottom: 23em;
+  }
+}
 
 button {
   position: fixed;
+  appearance: none;
+  background: none;
   right: 25px;
   top: 25px;
   height: 50px;
   width: 50px;
   background-color: var(--backgroundNav);
   border-radius: 50%;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
+  cursor: pointer;
   z-index: 500;
 }
 
-button::before {
-  content: url("../images/menu-to-arrow-left.svg");
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.85);
-  margin-top: 0.1em;
+button span {
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: var(--backgroundNavSpan);
+  transform-origin: 1px 1px;
+  transition: 0.5s;
 }
 
-.headertop nav.toonMenu button::before {
-  content: "\274C";
+button span:nth-of-type(1) {
+  transform: translatey(-0.5em);
+}
+
+button span:nth-of-type(3) {
+  transform: translatey(0.5em);
+}
+
+button span:nth-of-type(1).toonMenu {
+  transform: rotate(-45deg) scalex(0.5);
+}
+
+button span:nth-of-type(3).toonMenu {
+  transform: rotate(45deg) scalex(0.5);
 }
 
 .headertop nav:first-of-type {
   margin: 0;
-  padding: 4em 0 0;
+  padding: 0;
   background: var(--backgroundInfo);
   position: fixed;
   left: 0;
@@ -200,15 +252,15 @@ button::before {
   bottom: 0;
 
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
   gap: 0.25em;
   width: 100%;
   height: 100%;
 
   z-index: 100;
-  padding-left: 35px;
 
   transition: 0.3s;
-  overflow-y: hidden;
+  overflow-y: scroll;
 
   transform: translatex(-100%);
 }
@@ -217,7 +269,56 @@ button::before {
   transform: translatex(0%);
 }
 
+.headertop section:nth-of-type(1) {
+  background-color: var(--backgroundNav);
+  height: 200px;
+  margin-bottom: 80px;
+}
+
+.headertop section:nth-of-type(1) img {
+  width: 85%;
+  display: block;
+  padding-left: 35px;
+  margin-top: 25px;
+}
+
+.headertop section:nth-of-type(2) {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.headertop input {
+  padding-left: 20px;
+  border-radius: 20px;
+  height: 35px;
+  font-size: 0.9375em;
+  font-style: italic;
+  font-family: "var(--fontNameBook)";
+  color: var(--textColorZoeken);
+  border: 1px solid var(--borderColorHeaderBottom);
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.headertop section:nth-of-type(2) a {
+  font-family: "var(--fontNameMedium)";
+  font-size: 1.125em;
+  color: var(--textColorOverig);
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.headertop section:nth-of-type(3) {
+  padding-bottom: 5em;
+}
+
 .headertop nav:first-of-type ul {
+  padding-left: 35px;
   margin-bottom: 3em;
 }
 
@@ -244,43 +345,49 @@ button::before {
   color: var(--textColor);
 }
 
-header img {
-  width: 11em;
-  height: auto;
-  position: absolute;
-  top: -20em;
-  left: 0;
-}
-
-@media (max-width: 30em) {
-  header img {
-    margin-left: -84px;
-    width: 11em;
-  }
-}
-
-@media (min-width: 30em) and (max-width: 61.9375em) {
-  header img {
-    margin-left: -117px;
-    width: 253px;
-  }
-}
-
-.headerbottom {
-  position: relative;
-}
-
 .headertop {
   background-image: url(../images/CentraalMuseum.jpeg);
   background-size: cover;
   margin: 0 auto;
   width: 100%;
   height: 25em;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .headertop nav:first-of-type section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 16em;
+  }
+
+  .headertop nav:first-of-type ul:nth-of-type(2) {
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .headertop {
+    grid-column-start: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headertop {
+    height: 40em;
+  }
+
+  .headertop nav:first-of-type section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 16em;
+  }
 }
 
 .headerbottom {
   background-color: var(--backgroundHeaderBottom);
   width: 100%;
+  position: relative;
 }
 
 nav:last-of-type {
@@ -307,9 +414,6 @@ nav:last-of-type {
   font-family: "FontAwesome";
 }
 
-/* ***************** */
-
-/* Tablet */
 @media screen and (min-width: 768px) {
   .headerbottom nav:last-of-type ul {
     display: flex;
@@ -323,14 +427,6 @@ nav:last-of-type {
 
 /* Grote tablets en laptops */
 @media screen and (min-width: 992px) {
-  header {
-    grid-template-columns: 23em 1fr;
-  }
-
-  .headertop {
-    grid-column-start: 2;
-  }
-
   .headerbottom img {
     content: url("../images/logo-footer.svg");
     width: 340px !important;
@@ -363,28 +459,23 @@ nav:last-of-type {
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
-  header {
-    height: 20em;
-    margin-bottom: 23em;
-  }
-
   .headerbottom img {
     width: 28em !important;
     left: 4em;
-  }
-
-  .headertop {
-    height: 40em;
   }
 }
 
 /* ***************** */
 
-/* main */
+/***********/
+/*  #main  */
+/***********/
 
 /* ***************** */
 
-/* Mobiel */
+/***********/
+/*  Mobiel */
+/***********/
 
 main section {
   max-width: 100%;
@@ -402,7 +493,7 @@ main section img {
   margin-bottom: 0.01em;
 }
 
-main section p {
+time {
   font-family: "var(--fontNameMedium)";
   font-size: 0.9375em;
   letter-spacing: 0.05em;
@@ -444,7 +535,7 @@ main section p {
   order: -2;
 }
 
-.collectie article:first-of-type p:first-of-type {
+.collectie time {
   order: -1;
 }
 
@@ -457,204 +548,6 @@ main section p {
   gap: 0.625rem;
 }
 
-.collectieonline {
-  background-color: var(--backgroundNav);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.9375rem;
-}
-
-.collectieonline h3 {
-  text-align: center;
-  order: 0;
-}
-
-.collectieonline p {
-  letter-spacing: 0.03em;
-  font-size: 1em;
-  padding-top: 3.5625em;
-  padding-bottom: 0.825em;
-  order: -1;
-}
-
-.collectieonline section {
-  width: 66%;
-  text-align: center;
-  overflow: hidden;
-}
-
-.slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.slides > li {
-  flex-shrink: 0;
-  max-width: 400px;
-  position: relative;
-  margin-right: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-}
-
-.aanbevolen {
-  display: flex;
-  gap: 0.625rem;
-}
-
-.aanbevolen h2 {
-  order: 1;
-}
-
-.aanbevolen h3 {
-  text-align: center;
-  margin-top: 0.2em;
-  margin-bottom: 0.6em;
-  order: -2;
-}
-
-.aanbevolen p:first-of-type {
-  order: 0;
-}
-
-.aanbevolen p:last-of-type {
-  order: 2;
-}
-
-.aanbevolen img {
-  order: -1;
-}
-
-.aanbevolen a {
-  order: 3;
-}
-
-.info {
-  max-width: 100%;
-  height: 333px;
-  background-color: var(--backgroundColorlightblue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.info h2 {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.info a {
-  text-align: left;
-  font-size: 1em;
-  margin-top: 0.75rem;
-  font-family: "var(--fontNameBook)";
-  color: var(--textColorOverig);
-  text-decoration: underline;
-}
-
-.nieuwsenblogs {
-  text-align: left;
-  display: grid;
-  grid-gap: 2em;
-}
-
-.nieuwsenblogs h3 {
-  font-size: 2.8125em;
-  text-align: center;
-  margin-top: 0.6em;
-}
-
-.nieuwsenblogs article {
-  margin-bottom: 4.6875rem;
-}
-
-.nieuwsenblogs article a {
-  margin-top: 10px;
-  font-family: "var(--fontNameBold)";
-  color: var(--textColor);
-  font-size: 2em;
-  text-align: left;
-  line-height: 2.5rem;
-}
-
-.nieuwsenblogs article img {
-  margin-bottom: 0.5em;
-}
-
-.nieuwsenblogs article p:first-of-type {
-  color: var(--textColorDatumNieuws);
-  margin-bottom: 0.8em;
-}
-
-.nieuwsenblogs article p:last-of-type {
-  margin-top: 0.625rem;
-}
-
-.nieuwsenblogs article:last-of-type a img:last-of-type {
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0;
-}
-
-.nieuwsenblogs article:last-of-type a:last-of-type {
-  display: flex;
-  justify-content: start;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  gap: 1em;
-  font-family: "var(--fontNameBook)";
-  color: var(--textColorAuteur);
-  font-size: 1em;
-}
-
-.meer {
-  align-items: center;
-  padding: 0;
-  position: relative;
-  max-width: 100%;
-  top: -2em;
-}
-
-.meer a {
-  width: 170px;
-  margin-bottom: 50px;
-}
-
-.meer section:nth-child(2) {
-  justify-content: center;
-}
-
-.meer ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.meer li {
-  width: 50px;
-  height: 50px;
-  padding: 11px 14px;
-  border-radius: 50%;
-  border: 1px solid var(--borderColorInfo);
-  margin: 5px;
-}
-
-.meer li img {
-  width: 20px;
-  height: 27px;
-}
-
-/* ***************** */
-
-/* Tablet */
 @media screen and (min-width: 768px) {
   .collectie {
     grid-template-columns: 1fr 1fr;
@@ -671,7 +564,6 @@ main section p {
   .collectie section:first-of-type {
     padding-top: 0px;
   }
-
   .collectie section:first-of-type p:last-of-type {
     font-size: 1.23em;
   }
@@ -679,32 +571,14 @@ main section p {
   .collectie section:last-of-type h2 {
     margin-bottom: 0.5em;
   }
+}
 
-  .aanbevolen {
-    align-items: center;
-  }
-
-  .aanbevolen img {
-    width: 50%;
-  }
-
-  .nieuwsenblogs {
-    padding-left: 50px;
-    padding-right: 50px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .nieuwsenblogs h3 {
-    grid-column-start: 1;
-    grid-column-end: -1;
-  }
-
-  .nieuwsenblogs article {
-    margin-bottom: 50px;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .collectie section:last-of-type {
+    margin-right: 15px;
   }
 }
 
-/* Grote tablets en laptops */
 @media screen and (min-width: 992px) {
   .collectie {
     grid-template-columns: 1fr;
@@ -749,26 +623,267 @@ main section p {
     font-size: 4.375em;
     line-height: 4.0625rem;
   }
+}
+
+.collectieonline {
+  background-color: var(--backgroundNav);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9375rem;
+}
+
+.collectieonline h2 {
+  text-align: center;
+  order: 0;
+}
+
+.collectieonline p {
+  letter-spacing: 0.03em;
+  font-size: 1em;
+  padding-top: 3.5625em;
+  padding-bottom: 0.825em;
+  order: -1;
+  font-family: "var(--fontNameMedium)", sans-serif;
+  text-transform: uppercase;
+}
+
+.collectieonline section {
+  width: 66%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.slides > li {
+  flex-shrink: 0;
+  max-width: 200px;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+@media screen and (min-width: 992px) {
+  .collectieonline h2 {
+    font-size: 5rem;
+    margin-top: 0.2em;
+  }
+
+  .collectieonline img {
+    margin-top: 8em;
+    margin-bottom: 8em;
+  }
+}
+
+.aanbevolen {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.aanbevolen h3 {
+  order: 1;
+}
+
+.aanbevolen h2 {
+  text-align: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.6em;
+  order: -2;
+  font-size: 2.8125rem;
+}
+
+.aanbevolen p:first-of-type {
+  order: 0;
+}
+
+.aanbevolen p:last-of-type {
+  order: 2;
+}
+
+.aanbevolen img {
+  order: -1;
+}
+
+.aanbevolen a {
+  order: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .aanbevolen {
+    align-items: center;
+  }
+
+  .aanbevolen img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .aanbevolen h2 {
+    font-size: 5rem;
+    margin-top: 1em;
+  }
 
   .aanbevolen img {
     width: 30%;
   }
+}
 
-  input {
+@media screen and (min-width: 1200px) {
+  .aanbevolen img {
+    width: 20%;
+  }
+}
+
+.info {
+  max-width: 100%;
+  height: 333px;
+  background-color: var(--backgroundColorlightblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  text-decoration: none;
+  cursor: none;
+}
+
+.info a {
+  text-align: left;
+  font-size: 1em;
+  margin-top: 0.75rem;
+  font-family: "var(--fontNameBook)";
+  color: var(--textColorOverig);
+  text-decoration: underline;
+}
+
+.info input {
+  border: 1px solid var(--borderInput);
+  padding: 16px;
+  font-family: "var(--fontNameBook), sans-serif;";
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .info input {
     width: 50%;
   }
+}
 
+#abonneren {
+  border: 1px solid var(--borderColorInfo);
+  color: var(--textColor);
+  background-color: var(--backgroundInfo);
+  font-size: 1.0625em;
+  font-family: "var(--fontNameMedium)";
+}
+
+.nieuwsenblogs {
+  text-align: left;
+  display: grid;
+  grid-gap: 2em;
+}
+
+.nieuwsenblogs h2 {
+  font-size: 2.8125em;
+  text-align: center;
+  margin-top: 0.6em;
+}
+
+.nieuwsenblogs article {
+  margin-bottom: 4.6875rem;
+}
+
+.nieuwsenblogs article a {
+  margin-top: 10px;
+  font-family: "var(--fontNameBold)";
+  color: var(--textColor);
+  font-size: 2em;
+  text-align: left;
+  line-height: 2.5rem;
+}
+
+.nieuwsenblogs time {
+  order: -1;
+}
+
+.nieuwsenblogs article img {
+  margin-bottom: 0.5em;
+  order: -2;
+}
+
+.nieuwsenblogs time {
+  color: var(--textColorDatumNieuws);
+}
+
+.nieuwsenblogs article p:last-of-type {
+  margin-top: 0.625rem;
+}
+
+.nieuwsenblogs article:last-of-type a img:last-of-type {
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0;
+}
+
+.nieuwsenblogs article:last-of-type a:nth-child(5) {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 1em;
+  font-family: "var(--fontNameBook)";
+  color: var(--textColorAuteur);
+  font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .nieuwsenblogs {
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nieuwsenblogs h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .nieuwsenblogs article {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .nieuwsenblogs {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .nieuwsenblogs article a:first-of-type {
+  .nieuwsenblogs article a {
     font-family: "var(--fontNameMedium)";
     font-size: 1.25em;
     line-height: 1.5625rem;
   }
 
-  .nieuwsenblogs h3 {
+  .nieuwsenblogs h2 {
     text-align: left;
     grid-column-start: 4;
     grid-row-start: 1;
@@ -777,26 +892,58 @@ main section p {
   .nieuwsenblogs p:last-of-type {
     display: none;
   }
+}
 
+.meer {
+  align-items: center;
+  padding: 0;
+  position: relative;
+  max-width: 100%;
+  top: -2em;
+}
+
+.meer a {
+  width: 170px;
+  margin-bottom: 50px;
+}
+
+.meer section:nth-child(2) {
+  justify-content: center;
+}
+
+.meer ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.meer li {
+  width: 50px;
+  height: 50px;
+  padding: 11px 14px;
+  border-radius: 50%;
+  border: 1px solid var(--borderColorInfo);
+  margin: 5px;
+}
+
+.meer li img {
+  width: 20px;
+  height: 27px;
+}
+
+@media screen and (min-width: 992px) {
   .meer section {
     display: none;
   }
 }
 
-/* Desktop */
-@media screen and (min-width: 1200px) {
-  .aanbevolen img {
-    width: 20%;
-  }
-}
-
 /* ***************** */
 
-/* Footer */
+/*****************/
+/* #Footer */
+/*****************/
 
 /* ***************** */
-
-/* Mobiel */
 
 footer {
   background-color: var(--backgroundNav);
@@ -805,15 +952,24 @@ footer {
   padding-top: 50px;
   padding-bottom: 10px;
   display: grid;
-  grid-gap: 2em;
+  grid-template-columns: 1fr;
 }
 
-footer section:nth-child(1) img {
+/*********************/
+/* Logo footer */
+/*********************/
+
+#logofooter {
   max-width: 100%;
   vertical-align: middle;
   margin-bottom: 1.25rem;
 }
 
+/* *********** */
+
+/**********************************/
+/* Contact & Openingstijden */
+/**********************************/
 footer p {
   font-family: "var(--fontNameMedium)";
   font-size: 0.9375em;
@@ -824,53 +980,76 @@ footer p {
   margin-bottom: 1.1rem;
 }
 
-footer p:nth-child(2) {
-  margin-top: 0.9375rem;
-}
-
-footer section:nth-child(1) li,
-footer section:nth-child(1) a {
+footer section:nth-of-type(-n + 2) li,
+footer section:nth-of-type(-n + 2) a {
   color: var(--textColorOverig);
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-family: "var(--fontNameBook)";
   line-height: 1.75rem;
+  text-transform: none;
 }
 
-footer section:nth-child(1) li:last-of-type {
+footer section:nth-child(2) li:last-of-type {
   margin-bottom: 0.9375rem;
 }
 
-footer section:nth-child(1) a {
+footer section:nth-of-type(-n + 2) a {
   color: var(--textColorOverig);
   border-bottom: 1px solid var(--borderColorHeaderBottom);
 }
 
 footer section:nth-of-type(2) {
   padding-top: 0.5em;
-  padding-bottom: 2.125rem;
 }
 
-footer section:nth-of-type(2) ul {
+/* *********** */
+
+/****************************/
+/* Social Media Icons */
+/****************************/
+
+footer section:nth-of-type(3) ul {
   display: flex;
   flex-direction: row;
   gap: 1.3125rem;
-}
-
-footer section:nth-of-type(2) ul li img {
-  width: 1.5em;
-  height: 1.5em;
-}
-
-footer section:nth-of-type(3) {
-  display: flex;
-}
-
-footer section:nth-of-type(3) ul {
-  padding-right: 30px;
+  margin-bottom: 2em;
+  margin-top: 20px;
 }
 
 footer section:nth-of-type(3) ul li img {
-  max-width: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* *********** */
+
+/************************/
+/* Partner logo's */
+/************************/
+
+footer section:nth-of-type(4) ul {
+  display: grid;
+  grid-template-columns: 1fr 16em;
+}
+
+footer section:nth-of-type(4) ul {
+  padding-right: 30px;
+}
+
+footer section:nth-of-type(4) ul li:nth-child(-n + 2) {
+  grid-column-start: 1;
+}
+
+footer section:nth-of-type(4) ul li:nth-child(3) {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: flex;
+  justify-content: center;
+}
+
+footer section:nth-of-type(4) ul li img {
+  max-width: 8.125em;
+  opacity: 0.65;
 }
 
 /* ***************** */
@@ -880,30 +1059,59 @@ footer section:nth-of-type(3) ul li img {
   footer {
     padding-left: 50px;
     padding-right: 30px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 32em 1fr;
   }
 
   footer img:nth-of-type(1) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 25em;
-  }
-
-  footer section:nth-of-type(1) ul:first-of-type {
-    grid-column-start: 1;
-  }
-
-  footer section:nth-of-type(1) ul:last-of-type {
-    grid-column-start: 2;
+    width: 20em;
   }
 
   footer section:nth-of-type(2) {
-    grid-column-start: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  footer section:nth-of-type(2) ul {
+    padding-right: 7em;
+  }
+
+  footer section:nth-child(2) li:last-of-type {
+    margin-bottom: 0;
   }
 }
 
 /* Grote tablets en laptops */
 @media screen and (min-width: 992px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  footer section:nth-of-type(1) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  footer section:nth-of-type(2) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  footer section:nth-of-type(3) {
+    grid-column-start: -3;
+    grid-row-start: 1;
+    align-self: flex-end;
+  }
+
+  footer section:nth-of-type(3) ul {
+    margin-top: 2.5em;
+    margin-bottom: -10px;
+  }
+
+  footer section:nth-of-type(4) {
+    grid-column-start: -3;
+    grid-row-start: 2;
+  }
 }
 
 /* Desktop */
