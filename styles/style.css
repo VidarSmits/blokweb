@@ -36,12 +36,17 @@ li {
   --backgroundNav: #fbf9f2;
   --backgroundNavSpan: #282931;
 
+  --backgroundPresentatie: #f9fafb;
+
   /* TextColors */
   --textColor: #282931;
   --textColorOverig: #494a51;
   --textColorDatumNieuws: #a1a1a3;
   --textColorAuteur: rgba(0, 0, 0, 0, 84);
   --textColorZoeken: #404040;
+
+  --textColorOntdekH1: #ffffff;
+  --textColorTitelPresentatie: #e70518;
 
   /* BorderColors */
   --borderColorHeaderBottom: #494a51;
@@ -79,14 +84,8 @@ li {
 /* ***************** */
 
 /**************/
-/* Basis */
+/* #Basis */
 /**************/
-
-h1 {
-  font-family: "var(--fontNameBold)";
-  color: var(--textColor);
-  margin: 0;
-}
 
 h2 {
   font-family: "var(--fontNameBold)";
@@ -105,7 +104,12 @@ h3 {
   font-family: "var(--fontNameBold)";
   color: var(--textColor);
   margin: 0;
-  font-size: 2.8125em;
+}
+
+h4 {
+  font-family: "var(--fontNameBook)";
+  color: var(--textColorTitelPresentatie);
+  font-size: 1.1em;
 }
 
 a {
@@ -192,7 +196,7 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-  header {
+  #headerhome {
     height: 20em;
     margin-bottom: 23em;
   }
@@ -241,7 +245,7 @@ button span:nth-of-type(3).toonMenu {
   transform: rotate(45deg) scalex(0.5);
 }
 
-.headertop nav:first-of-type {
+.nav {
   margin: 0;
   padding: 0;
   background: var(--backgroundInfo);
@@ -265,24 +269,24 @@ button span:nth-of-type(3).toonMenu {
   transform: translatex(-100%);
 }
 
-.headertop nav:first-of-type.toonMenu {
+.nav.toonMenu {
   transform: translatex(0%);
 }
 
-.headertop section:nth-of-type(1) {
+.nav section:nth-of-type(1) {
   background-color: var(--backgroundNav);
   height: 200px;
   margin-bottom: 80px;
 }
 
-.headertop section:nth-of-type(1) img {
-  width: 85%;
+.nav img {
+  width: 50%;
   display: block;
   padding-left: 35px;
   margin-top: 25px;
 }
 
-.headertop section:nth-of-type(2) {
+.nav section:nth-of-type(2) {
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 30px;
@@ -291,7 +295,7 @@ button span:nth-of-type(3).toonMenu {
   gap: 1em;
 }
 
-.headertop input {
+input:nth-child(1) {
   padding-left: 20px;
   border-radius: 20px;
   height: 35px;
@@ -305,7 +309,7 @@ button span:nth-of-type(3).toonMenu {
   width: 100%;
 }
 
-.headertop section:nth-of-type(2) a {
+.nav section:nth-of-type(2) a {
   font-family: "var(--fontNameMedium)";
   font-size: 1.125em;
   color: var(--textColorOverig);
@@ -313,33 +317,33 @@ button span:nth-of-type(3).toonMenu {
   align-self: flex-start;
 }
 
-.headertop section:nth-of-type(3) {
+.nav section:nth-of-type(3) {
   padding-bottom: 5em;
 }
 
-.headertop nav:first-of-type ul {
+.nav ul {
   padding-left: 35px;
   margin-bottom: 3em;
 }
 
-.headertop nav:first-of-type li {
+.nav li {
   margin: 0;
   padding: 0;
   font-size: 1em;
   margin-bottom: 10px;
 }
 
-.headertop nav:first-of-type li a {
+.nav li a {
   color: var(--textColorOverig);
   font-family: "var(--fontNameBook)";
   font-size: 1.125rem;
 }
 
-.headertop nav:first-of-type li:first-of-type {
+.nav li:first-of-type {
   margin-bottom: 15px;
 }
 
-.headertop nav:first-of-type li:first-of-type a {
+.nav li:first-of-type a {
   font-family: "var(--fontNameBold)";
   font-size: 1.75em;
   color: var(--textColor);
@@ -355,13 +359,13 @@ button span:nth-of-type(3).toonMenu {
 }
 
 @media screen and (min-width: 768px) {
-  .headertop nav:first-of-type section {
+  .nav section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 16em;
   }
 
-  .headertop nav:first-of-type ul:nth-of-type(2) {
+  .nav ul:nth-of-type(2) {
     grid-column-start: 2;
   }
 }
@@ -377,7 +381,7 @@ button span:nth-of-type(3).toonMenu {
     height: 40em;
   }
 
-  .headertop nav:first-of-type section {
+  .nav section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 16em;
@@ -390,7 +394,7 @@ button span:nth-of-type(3).toonMenu {
   position: relative;
 }
 
-nav:last-of-type {
+.headerbottom nav:last-of-type {
   padding: 54px;
 }
 
@@ -445,7 +449,7 @@ nav:last-of-type {
     font-size: 1.25em;
   }
 
-  header nav:last-of-type {
+  .headerbottom nav:last-of-type {
     position: absolute;
     bottom: -1em;
     left: 1em;
@@ -468,13 +472,7 @@ nav:last-of-type {
 /* ***************** */
 
 /***********/
-/*  #main  */
-/***********/
-
-/* ***************** */
-
-/***********/
-/*  Mobiel */
+/*  #main home  */
 /***********/
 
 main section {
@@ -691,6 +689,7 @@ time {
 
 .aanbevolen h3 {
   order: 1;
+  font-size: 2.8125em;
 }
 
 .aanbevolen h2 {
@@ -809,7 +808,7 @@ time {
   margin-bottom: 4.6875rem;
 }
 
-.nieuwsenblogs article a {
+.nieuwsenblogs article h3 a {
   margin-top: 10px;
   font-family: "var(--fontNameBold)";
   color: var(--textColor);
@@ -877,10 +876,11 @@ time {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .nieuwsenblogs article a {
+  .nieuwsenblogs article h3 a {
     font-family: "var(--fontNameMedium)";
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.5625rem;
+    color: var(--textColorOverig);
   }
 
   .nieuwsenblogs h2 {
@@ -938,6 +938,144 @@ time {
 }
 
 /* ***************** */
+
+/**********************/
+
+/****/
+/* #header ontdek */
+/****/
+
+#headerontdek {
+  display: block;
+}
+
+.welkom {
+  background-image: url(../images/ontdek-header.jpeg);
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-size: cover;
+  background-position: top center;
+  transform: translate3d(0px, 0px, 0px);
+  display: block;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--textColorOntdekH1);
+  font-family: "var(--fontNameBold)";
+  font-size: 3.125rem;
+  max-width: 100%;
+  margin-bottom: 0px;
+  line-height: 53px;
+  padding-bottom: 1.25rem;
+  width: 100%;
+  text-align: center;
+  padding-left: 2.1875rem;
+  padding-right: 2.1875rem;
+}
+
+.welkom img {
+  margin-left: -84px;
+  width: 189px;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .welkom {
+    height: 90vh;
+  }
+
+  .welkom img {
+    top: 35px;
+  }
+
+  h1 {
+    font-size: 4.0625rem;
+    width: 40.625rem;
+    line-height: 70px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 76px;
+    max-width: 100%;
+  }
+
+  .welkom img {
+    top: 38px;
+    margin-left: -138px;
+    width: inherit;
+  }
+}
+
+/****/
+/* #main ontdek  */
+/****/
+
+.presentatie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--backgroundPresentatie);
+  margin: 0 0 3em;
+}
+
+.presentatie h4 {
+  font-size: 1.1em;
+  text-align: center;
+  max-width: 90%;
+}
+
+.presentatie p {
+  max-width: 90%;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 36px;
+  font-family: "var(--fontnameBook)";
+}
+
+@media screen and (max-width: 768px) {
+  .presentatie {
+    height: 100vh;
+    min-height: auto;
+    padding: 1em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .presentatie h4 {
+    font-size: 1.1875rem;
+  }
+
+  .presentatie p {
+    font-size: 1.875em;
+    line-height: 47px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .presentatie h4 {
+    font-size: 1.4375rem;
+  }
+
+  .presentatie p {
+    font-size: 2.3125rem;
+    line-height: 3.625rem;
+  }
+}
+
+/****/
 
 /*****************/
 /* #Footer */

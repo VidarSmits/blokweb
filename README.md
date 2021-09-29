@@ -23,7 +23,6 @@ Vidar Smits
 
 ## Je website
 
-<details open>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
@@ -99,7 +98,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
