@@ -17,14 +17,16 @@
     <header id="headerhome">
       <section class="headertop">
         <a id="knopwit" href="ontdek.html">Ontdek het museum</a>
-        <button href="#nav">
+        <button aria-label="button">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <nav class="nav">
           <section>
-            <img src="images/logo-footer.svg" alt="" />
+            <a href="index.html"
+              ><img src="images/logo-footer.svg" alt="logo-nav"
+            /></a>
           </section>
 
           <section>
@@ -84,7 +86,7 @@
           <img src="images/large5.jpeg" alt="botanische" />
           <article>
             <h2>De botanische revolutie</h2>
-            <time>11 sep 2021 - 09 jan 2022</time>
+            <time datetime="2021-09-11">11 sep 2021 - 09 jan 2022</time>
             <p class="leestekst">Over de noodzaak van kunst en tuinieren.</p>
             <a class="knop" href="#">Meer info</a>
           </article>
@@ -94,7 +96,7 @@
           <img src="images/large.jpeg" alt="joost-van-bleiswijk" />
           <article>
             <h2>Joost van Bleiswijk: Reconnect</h2>
-            <time>03 jul 2021 - 20 okt 2021</time>
+            <time datetime="2021-07-03">03 jul 2021 - 20 okt 2021</time>
             <a class="knop" href="#">Meer info</a>
           </article>
         </section>
@@ -117,7 +119,7 @@
       <section class="aanbevolen">
         <h2>Aanbevolen</h2>
         <h3>Central Proost</h3>
-        <time>10 sep 2021 - 24 sep 2021</time>
+        <time datetime="2021-09-10">10 sep 2021 - 24 sep 2021</time>
         <p class="leestekst">
           Vrijdagmiddagborrels met muziek in de museumtuin &#40;gratis&#41;
         </p>
@@ -139,7 +141,7 @@
             <a href="#">Jeroen Kooijmans schenkt film aan Centraal Museum</a>
           </h3>
           <img src="images/mini.jpeg" alt="mini" />
-          <time>03 sep 2021</time>
+          <time datetime="2021-09-03">03 sep 2021</time>
           <p class="leestekst">
             New York is Eating Me & The Cactus Dance is 11 september 2021 te
             zien in het HEM.
@@ -148,7 +150,7 @@
         <article>
           <h3><a href="#">Nieuwe aankoop van Patricia Kaersenhout</a></h3>
           <img src="images/patricia.jpeg" alt="patricia" />
-          <time>26 aug 2021</time>
+          <time datetime="2021-08-26">26 aug 2021</time>
           <p class="leestekst">
             Samen met drie andere musea is 'Guess Who's Coming To Dinner Too?'
             aangekocht.
@@ -157,7 +159,7 @@
         <article>
           <h3><a href="#">Uit de schaduw van Maria Sibylla Merian </a></h3>
           <img src="images/maria.jpeg" alt="maria" />
-          <time>23 aug 2021</time>
+          <time datetime="2021-08-23">23 aug 2021</time>
           <p class="leestekst">
             Patricia Kaersenhout brengt een ode aan de onzichtbare vrouwen
             achter Merian.
@@ -209,7 +211,9 @@
       <section>
         <ul>
           <li>Openingstijden</li>
-          <time><li>Dinsdag t/m zondag 11.00 - 17.00 uur</li></time>
+          <li>
+            <time datetime="11:00">Dinsdag t/m zondag 11.00 - 17.00 uur</time>
+          </li>
           <li>
             <a href="https://www.centraalmuseum.nl/nl/plan-uw-bezoek"
               >Plan uw bezoek</a
