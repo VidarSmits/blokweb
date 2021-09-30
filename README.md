@@ -131,7 +131,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary>uitwerken na test in 8e voortgang</summary>
+<summary>uitwerken na test in 8e voortgang (Moet dit nog verwerken (staat op papier))</summary>
 
 ### Bevindingen
 
@@ -163,11 +163,9 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 </details>
 
-<details open>
-
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
@@ -179,7 +177,7 @@ samen met je groepje opstellen
 | Vidar                                                                   | Claudio            | student 3    | student 4        |
 | ----------------------------------------------------------------------- | ------------------ | ------------ | ---------------- |
 | Enig idee hoe ik dit het beste kan aanpakken? (screenshot laat ik zien) | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog                                                          | dit als er tijd is | nog een punt | dit wil ik zeker |
+| ...                                                                     | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...                                                                     | ...                | ...          | ...              |
 
 ### Verslag van meeting
