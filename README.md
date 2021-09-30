@@ -98,7 +98,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
@@ -163,6 +163,8 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 </details>
 
+<details open>
+
 ## Voortgang 3 (week 4)
 
 <details>
@@ -170,17 +172,15 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Vidar                                                                   | Claudio            | student 3    | student 4        |
+| ----------------------------------------------------------------------- | ------------------ | ------------ | ---------------- |
+| Enig idee hoe ik dit het beste kan aanpakken? (screenshot laat ik zien) | en dit             | en ik dit    | en dan ik dat    |
+| en dat ook nog                                                          | dit als er tijd is | nog een punt | dit wil ik zeker |
+| ...                                                                     | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
