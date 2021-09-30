@@ -174,11 +174,11 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 samen met je groepje opstellen
 
-| Vidar                                                                   | Claudio            | student 3    | student 4        |
-| ----------------------------------------------------------------------- | ------------------ | ------------ | ---------------- |
-| Enig idee hoe ik dit het beste kan aanpakken? (screenshot laat ik zien) | en dit             | en ik dit    | en dan ik dat    |
-| ...                                                                     | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...                                                                     | ...                | ...          | ...              |
+| Vidar                                                        | Claudio            | student 3    | student 4        |
+| ------------------------------------------------------------ | ------------------ | ------------ | ---------------- |
+| Enig idee hoe ik dit het beste kan aanpakken? (Laat ik zien) | en dit             | en ik dit    | en dan ik dat    |
+| ...                                                          | dit als er tijd is | nog een punt | dit wil ik zeker |
+| ...                                                          | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
