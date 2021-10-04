@@ -194,13 +194,13 @@ Meer ruimte om de button of linkjes heen klikbaar maken
 
 _Homepage_
 <img src="images/home.png" width="375px" alt="Homepagina-Desktop">
-<img src="images/home.png" width="375px" alt="Homepagina-Mobiel">
+<img src="images/homemobiel.png" width="375px" alt="Homepagina-Mobiel">
 
 ---
 
 _Praktisch_
 <img src="images/praktisch.png" width="375px" alt="Praktische informatie pagina-Desktop">
-<img src="images/praktisch.png" width="375px" alt="Praktische informatie pagina-Mobiel">
+<img src="images/praktischmobiel.png" width="375px" alt="Praktische informatie pagina-Mobiel">
 
 </details>
 
