@@ -185,6 +185,8 @@ Meer ruimte om de button of linkjes heen klikbaar maken
 - De footer heb ik 2x overnieuw moeten maken, eerst met flex daarna met grid. Maar de derde keer lukte het pas om het goed responsive te krijgen.
   <img src="images/footer.png" width="375px" alt="footer">
 
+---
+
 - De navigatie was lastig om precies volgens de huidige te krijgen met plaatising. Uiteindelijk met grid gefixed!
   <img src="images/menu.png" width="375px" alt="navigatie menu">
 
@@ -192,6 +194,8 @@ Meer ruimte om de button of linkjes heen klikbaar maken
 
 _Homepage_
 <img src="images/home.png" width="375px" alt="Homepagina">
+
+---
 
 _Praktisch_
 <img src="images/praktisch.png" width="375px" alt="Praktische informatie pagina">
