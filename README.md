@@ -5,27 +5,27 @@ Hi, welkom bij mijn procesverslag van Blok Web - FED.
 ## Jij
 
 <details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
+<summary>Uitgewerkt voor kick-off werkgroep</summary>
 
 ### Auteur:
 
 Vidar Smits
 
-#### Je startniveau:
+#### Mijn startniveau:
 
 - Rood
 
-#### Je focus:
+#### Mijn focus:
 
 - Responsive maken
 
 </details>
 
-## Je website
+## De website
 
-<summary>uitwerken voor kick-off werkgroep</summary>
+<summary>Uitgewerkt voor kick-off werkgroep</summary>
 
-### Je opdracht:
+### De opdracht:
 
 https://www.centraalmuseum.nl/nl
 
@@ -54,7 +54,7 @@ _Ontdek Centraal Museum_
 ## Breakdownschets (week 1)
 
 <details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
+<summary>Uitgewerkt na afloop 2e werkgroep</summary>
 
 ### de hele pagina:
 
@@ -69,15 +69,11 @@ _Ontdek Centraal Museum_
 ## Voortgang 1 (week 2)
 
 <details>
-<summary>uitwerken voor 1e voortgang</summary>
+<summary>Uitgewerkt voor 1e voortgang</summary>
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
 ### Agenda voor meeting
-
-samen met je groepje opstellen
 
 | Vidar                                                         | Claudio                   | Leroy | Ruben |
 | ------------------------------------------------------------- | ------------------------- | ----- | ----- |
@@ -99,7 +95,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Voortgang 2 (week 3)
 
 <details>
-<summary>uitwerken voor 2e voortgang</summary>
+<summary>Uitgewerkt voor 2e voortgang</summary>
 
 ### Stand van zaken
 
@@ -119,53 +115,48 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Verslag van meeting
 
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Linkje gekregen met uitleg voor hamburger menu https://codepen.io/shooft/pen/vYZzBXY
 
 </details>
 
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary>uitwerken na test in 8e voortgang (Moet dit nog verwerken (staat op papier))</summary>
+<summary>Uitgewerkt na test in 8e voortgang</summary>
 
 ### Bevindingen
 
-Lijst met je bevindingen die in de test naar voren kwamen:
+Lijst met bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
+#### Focus tab overal werkend maken.
 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Bij de "Focus Tab" sloeg die een aantal elementen over
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Oplossing: Href toevoegen of testen met andere browser
 
-#### Titel tweede bevinding.
+#### Active State toevoegen.
 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Er zat nog niet overal een active state op
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Oplossing: Active state toevoegen
 
-#### Titel volgende bevinding.
+#### Voice over werkt op de juiste manier.
 
-Hier korte omschrijving (met indien nodig een afbeelding)
+De voice over las alles in goede volgorde door
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+N.V.T.
 
-#### Titel nog een bevinding.
+#### Klikbaar maken voor iedereen.
 
-Hier korte omschrijving (met indien nodig een afbeelding)
+Voor Spasme of de ziekte van Parkinson kan je nog niet gemakkelijk de buttons of andere linkjes inklikken
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Meer ruimte om de button of linkjes heen klikbaar maken
 
 </details>
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
@@ -180,18 +171,13 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 ### Verslag van meeting
 
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Mijn vraag kon niet beantwoord worden, wel heb ik een filmpje mee gekregen van Claudio over parralax scrolling
 
 </details>
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
@@ -207,12 +193,13 @@ hier screenshot(s) van je eindresultaat
 ## Bronnenlijst
 
 <details open>
-<summary>continu bijhouden terwijl je werkt</summary>
+<summary></summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+1. https://css-tricks.com/css-only-carousel/
+2. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time
+3. https://developer.mozilla.org/en-US/docs/Web/CSS/:focus
+4. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale()
+5. https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color
+6. https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type?retiredLocale=nl
 
 </details>
