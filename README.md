@@ -157,7 +157,7 @@ Meer ruimte om de button of linkjes heen klikbaar maken
 ## Voortgang 3 (week 4)
 
 <details>
-<summary>uitwerken voor 3e voortgang</summary>
+<summary>Uitgewerkt voor 3e voortgang</summary>
 
 ### Stand van zaken
 
