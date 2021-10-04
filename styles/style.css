@@ -142,6 +142,13 @@ article {
   flex-direction: column;
 }
 
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 .knop {
   font-family: "var(--fontNameMedium)";
   font-size: 1.0625em;
