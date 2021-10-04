@@ -215,5 +215,7 @@ _Praktisch_
 4. https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale()
 5. https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color
 6. https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type?retiredLocale=nl
+7. https://css-tricks.com/snippets/css/complete-guide-grid/
+8. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 
 </details>
