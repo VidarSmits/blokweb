@@ -190,11 +190,11 @@ Meer ruimte om de button of linkjes heen klikbaar maken
 
 ### Screenshot(s)
 
-- Homepagina
-  <img src="images/home.png" width="375px" alt="Homepagina">
+_Homepage_
+<img src="images/home.png" width="375px" alt="Homepagina">
 
-  - Ontdek
-    <img src="images/praktisch.png" width="375px" alt="Praktische informatie pagina">
+_Praktisch_
+<img src="images/praktisch.png" width="375px" alt="Praktische informatie pagina">
 
 </details>
 
