@@ -9,7 +9,12 @@
 
     <link href="styles/style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.ico" />
-    <script src="https://use.fontawesome.com/579ead5dc1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
@@ -76,6 +81,7 @@
             src="images/centraal_museum_logo.svg"
             alt="centraal_museum_logo"
         /></a>
+
         <nav>
           <ul>
             <li><a tabindex="0" href="#">Tickets </a></li>
@@ -113,11 +119,39 @@
         <p>Collectie Online</p>
         <section>
           <ul class="slides">
-            <li><img src="images/large3.jpeg" alt="rietveld" /></li>
+            <li>
+              <img src="images/large3.jpeg" alt="rietveld" />
+            </li>
             <li><img src="images/large4.jpeg" alt="de-koppelaarster" /></li>
             <li><img src="images/large5.jpeg" alt="botanische" /></li>
             <li><img src="images/large6.jpeg" alt="schip" /></li>
             <li><img src="images/large2.jpeg" alt="nijntje" /></li>
+
+            <li><img src="images/ensemble.jpeg" alt="ensemble" /></li>
+            <li><img src="images/dracula.jpeg" alt="dracula" /></li>
+            <li>
+              <img
+                src="images/zelfportret.jpeg"
+                alt="zelfportret met zwarte band"
+              />
+            </li>
+            <li>
+              <img
+                src="images/geentitel.jpeg"
+                alt="geentitel van Jessica Stockholder"
+              />
+            </li>
+            <li>
+              <img
+                src="images/domkerk.jpeg"
+                alt="domkerk van Jan Hendrik Verheijen"
+              />
+            </li>
+            <li><img src="images/munttoren.jpeg" alt="munttoren" /></li>
+            <li><img src="images/jurk.jpeg" alt="jurk" /></li>
+            <li>
+              <img src="images/poppenhuis.jpeg" alt="poppenhuis" />
+            </li>
           </ul>
         </section>
       </section>
@@ -206,78 +240,76 @@
 
     <!-- Footer -->
     <footer>
-      <img id="logofooter" src="images/logo-footer.svg" alt="logo-footer" />
-      <section>
+      <div id="footerlogo">
+        <a href="index.html">
+          <img src="images/logo-footer.svg" alt="logofooter"
+        /></a>
+      </div>
+
+      <section class="contact">
+        <a href="#"><p>Contact</p></a>
         <ul>
-          <li>Contact</li>
           <li>Agnietenstraat 1</li>
           <li>3512 XA Utrecht</li>
-          <li>
-            <a href="mailto:info@centraalmuseum.nl">info@centraalmuseum.nl</a>
-          </li>
+          <li><a href="#">info@centraalmuseum.nl</a></li>
         </ul>
       </section>
+
       <section>
+        <a href="#"><p>Openingstijden</p></a>
         <ul>
-          <li>Openingstijden</li>
           <li>
             <time datetime="11:00">Dinsdag t/m zondag 11.00 - 17.00 uur</time>
           </li>
-          <li>
-            <a href="https://www.centraalmuseum.nl/nl/plan-uw-bezoek"
-              >Plan uw bezoek</a
-            >
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li>
-            <a href="#"
-              ><img src="images/twitter-social.svg" alt="twitter-social"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="images/facebook-social.svg" alt="facebook-social"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="images/instagram-social.svg" alt="instagram-social"
-            /></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="images/youtube-social.svg" alt="youtube-social"
-            /></a>
-          </li>
+          <li><a href="#">Plan uw bezoek</a></li>
         </ul>
       </section>
 
       <section>
         <ul>
           <li>
-            <a href="#">
-              <img src="images/Vrienden-loterij.svg" alt="Vrienden-loterij"
-            /></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </li>
-          <li>
-            <a href="#">
-              <img
+          <li><a href="#"></a><i class="fab fa-facebook-f"></i></li>
+          <li><a href="#"></a><i class="fab fa-instagram"></i></li>
+          <li><a href="#"></a><i class="fab fa-youtube"></i></li>
+        </ul>
+      </section>
+
+      <section>
+        <section>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="images/Vrienden-loterij.svg"
+                  alt="Vrienden-loterij-Logo"
+              /></a>
+            </li>
+            <li>
+              <a href="#"></a
+              ><img
                 src="images/Logo_ministerie_OCW.svg.svg"
                 alt="Logo_ministerie_OCW"
-            /></a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/Gemeente-Utrecht.svg" alt="Gemeente-Utrecht"
-            /></a>
-          </li>
-        </ul>
+              />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="images/Gemeente-Utrecht.svg"
+                  alt="Gemeente-Utrecht-Logo"
+              /></a>
+            </li>
+          </ul>
+        </section>
       </section>
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="https://use.fontawesome.com/579ead5dc1.js"></script>
   </body>
 </html>
