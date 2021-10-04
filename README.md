@@ -42,12 +42,12 @@ _Homepage_
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
-_Ontdek Centraal Museum_
+_Praktische informatie_
 
-<img src="images/ontdek-img1.jpg" width="375px" alt="ontdek-bovenkant">
-<img src="images/ontdek-img2.jpg" width="375px" alt="ontdek-midden-1">
-<img src="images/ontdek-img3.jpg" width="375px" alt="ontdek-midden-2">
-<img src="images/ontdek-img4.jpg" width="375px" alt="ontdek-onder">
+<img src="images/praktisch-img1.jpg" width="375px" alt="praktisch-bovenkant">
+<img src="images/praktisch-img2.jpg" width="375px" alt="praktisch-midden-1">
+<img src="images/praktisch-img3.jpg" width="375px" alt="praktisch-midden-2">
+<img src="images/praktisch-img4.jpg" width="375px" alt="praktisch-onder">
 
 </details>
 
