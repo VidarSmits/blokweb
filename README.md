@@ -178,15 +178,23 @@ Meer ruimte om de button of linkjes heen klikbaar maken
 ## Eindgesprek (week 5)
 
 <details open>
-<summary>uitwerken voor eindgesprek</summary>
+<summary>Uitgewerkt voor eindgesprek</summary>
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+- De footer heb ik 2x overnieuw moeten maken, eerst met flex daarna met grid. Maar de derde keer lukte het pas om het goed responsive te krijgen.
+  <img src="images/footer.png" width="375px" alt="footer">
+
+- De navigatie was lastig om precies volgens de huidige te krijgen met plaatising. Uiteindelijk met grid gefixed!
+  <img src="images/menu.png" width="375px" alt="navigatie menu">
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+- Homepagina
+  <img src="images/home.png" width="375px" alt="Homepagina">
+
+  - Ontdek
+    <img src="images/praktisch.png" width="375px" alt="Praktische informatie pagina">
 
 </details>
 
